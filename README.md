@@ -22,8 +22,19 @@ Exploratory Data Analysis:<br>
 •	Salary Level Analysis: Examine how salaries vary across different categories such as state, job type, and experience level.<br>
 •	Keyword Analysis: Investigate common keywords in job titles and skills, drawing insights on the demand for specific roles and skills.<br>
 
+Latent Dirichlet Allocation:<br>
+•	Preprocess the text data in the job descriptions.<br>
+•	Create a Bag of Words containing the number of times a word appears in the training set.<br>
+•	Develop the LDA Model.<br>
+•	View the model performance and latent topics.<br>
+•	Fine-tune the model to find the best descriptive topics.<br>
+•	Assign the topic to job description.<br>
+
 Data Modeling:<br>
-•	TBD<br>
+•	Build a Transformer to process data<br>
+•	Create training and testing sets.<br>
+•	Model Training and Fine-tuning for Salary Lower Bound & Upper Bound<br>
+•	Select the final model based on performance on salary lower and upper bound.<br>
 
 Application Deployment:<br>
 •	TBD<br>
