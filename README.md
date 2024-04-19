@@ -1,42 +1,42 @@
 # DSalary-Predictor
 
 ## Description:
-This project is designed to predict salaries for data science roles, utilizing Linkedin job postings as a primary data source. 
+This project is designed to predict salaries for data science roles, utilizing Linkedin job postings as a primary data source. It enables users to obtain personalized salary estimates by entering specific details such as their skills, work experience, geographical location, company size, and other relevant information.
 
-When I applied to this master's program, I was encouraged by one statement - the U.S. Bureau of Labor Statistics projects jobs in the (data) field to grow more than 30 percent between 2020 and 2030. With graduation on the horizon, my focus has naturally evolved towards understanding the potential earnings within this burgeoning field. To address this, I will embark on a project designed to predict salaries for data science roles, utilizing Glassdoor job postings as a primary data source. This tool enables users to obtain personalized salary estimates by entering specific details such as their skills, work experience, geographical location, company size, and other relevant information.
+## Prerequisites:
+### Python 3
 
-Introduction:<br>
-•	Problem: Graduates are uncertain about the salary levels they can achieve in data science positions.<br>
-•	Dataset: Data science job listings scraped from the LinkedIn website.<br>
-•	Goals: Providing graduates with realistic salary expectations tailored to their skills, experience, and the status of the company.<br>
-•	Methods: Applying Random Forest, XGBoost, Latent Dirichlet Allocation, etc.<br>
+### Required libraries: 
+#### 1. Data Handling and Analysis
+pandas, numpy
+#### 2. Data Visualization
+matplotlib, seaborn
+#### 3. Data Serialization
+pickle, json
+#### 4. Natural Language Processing
+nltk, gensim
+#### 5. Machine Learning
+sklearn, xgboost, catboost
 
-Data Collection:<br>
-•	Sources: data science job listings from LinkedIn website.<br>
-•	Techniques: web scraping tools (pyautogui, selenium.webdriver, BeautifulSoup).<br>
+### Jupyter Notebook
 
-Data Processing:<br>
-•	Cleaning: Regularized location information, standardized salary units, and removed unnecessary information.<br>
-•	Feature Engineering: Created and refined of features, including the extraction of keywords from job titles using nltk.<br>
+## Project Structure:
+•	DSalary_Predictor.ipynb: Project notebook containing all codes.
+•	job_post_data.csv: structural data after cleaning for analysis and model training
 
-Exploratory Data Analysis:<br>
-•	Distribution Analysis: Analyze job distribution by state, job type, remote availability, experience level, company size, and field.<br>
-•	Salary Level Analysis: Examine how salaries vary across different categories such as state, job type, and experience level.<br>
-•	Keyword Analysis: Investigate common keywords in job titles and skills, drawing insights on the demand for specific roles and skills.<br>
+##  Execution of the Project
+1. Start Jupyter Notebook
+2. Import necessary packages and comment out any lines required solely for the Data Collection section.
+3. Skip the Data Collection section (cells 2 - 17), as it involves complex automation operations that may not be compatible with all operating systems, including MacOS and Linux.
+4. Run the Data Processing section (cells 18 - 22) in sequence to convert categorical, numerical, and textual features.
+5. Run the EDA section (cells 23 - 40) in sequence to discover feature patterns and their correlations with the target variable.
+6. Run the Latent Dirichlet Allocation section (cells 41 - 51) in sequence to classify job description text to three main topics.
+7. Run the Data Modeling section (cells 52 - 68) in sequence to develop, evaluate, and save the final models.
 
-Latent Dirichlet Allocation:<br>
-•	Preprocess the text data in the job descriptions.<br>
-•	Create a Bag of Words containing the number of times a word appears in the training set.<br>
-•	Develop the LDA Model.<br>
-•	View the model performance and latent topics.<br>
-•	Fine-tune the model to find the best descriptive topics.<br>
-•	Assign the topic to job description.<br>
+##  Reproducing Results
+1. Ensure sequential execution by carefully following the instructions for each step of processing, analysis, and modeling outlined in this Readme file.
+2. Verify that the csv file referenced in the instruction is located in the same directory as the Jupyter notebook file
 
-Data Modeling:<br>
-•	Build a Transformer to process data<br>
-•	Create training and testing sets.<br>
-•	Model Training and Fine-tuning for Salary Lower Bound & Upper Bound<br>
-•	Select the final model based on performance on salary lower and upper bound.<br>
+## Support
+If you encounter any issues, please contact the developer at xig423@lehigh.edu.
 
-Application Deployment:<br>
-•	TBD<br>
