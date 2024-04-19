@@ -1,7 +1,7 @@
 # DSalary Predictor
 
 ## Description
-This project predicts salaries for data science roles using LinkedIn job postings. It provides personalized salary estimates by analyzing factors such as skills, work experience, geographical location, company size, and other relevant job properties.
+This project is designed to predict salaries for data science roles, utilizing Linkedin job postings as a primary data source. It enables users to obtain personalized salary estimates by entering specific details such as their skills, work experience, geographical location, company size, and other relevant information.
 
 ## Prerequisites
 - **Python 3**
