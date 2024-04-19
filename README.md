@@ -1,42 +1,35 @@
-# DSalary-Predictor
+# DSalary Predictor
 
-## Description:
-This project is designed to predict salaries for data science roles, utilizing Linkedin job postings as a primary data source. It enables users to obtain personalized salary estimates by entering specific details such as their skills, work experience, geographical location, company size, and other relevant information.
+## Description
+This project predicts salaries for data science roles using LinkedIn job postings. It provides personalized salary estimates by analyzing factors such as skills, work experience, geographical location, company size, and other relevant job properties.
 
-## Prerequisites:
-### Python 3
+## Prerequisites
+- **Python 3**
+- **Jupyter Notebook**
 
-### Required libraries: 
-#### 1. Data Handling and Analysis
-pandas, numpy
-#### 2. Data Visualization
-matplotlib, seaborn
-#### 3. Data Serialization
-pickle, json
-#### 4. Natural Language Processing
-nltk, gensim
-#### 5. Machine Learning
-sklearn, xgboost, catboost
+### Required Libraries
+- **Data Handling and Analysis:** `pandas`, `numpy`
+- **Data Visualization:** `matplotlib`, `seaborn`
+- **Data Serialization:** `pickle`, `json`
+- **Natural Language Processing:** `nltk`, `gensim`
+- **Machine Learning:** `sklearn`, `xgboost`, `catboost`
 
-### Jupyter Notebook
+## Project Structure
+- `DSalary_Predictor.ipynb`: Main project notebook containing all code.
+- `job_post_data.csv`: Cleaned structural data for analysis and model training.
 
-## Project Structure:
-•	DSalary_Predictor.ipynb: Project notebook containing all codes.<br>
-•	job_post_data.csv: structural data after cleaning for analysis and model training
-
-##  Execution of the Project
-1. Start Jupyter Notebook
+## Execution of the Project
+1. Start Jupyter Notebook.
 2. Import necessary packages and comment out any lines required solely for the Data Collection section.
-3. Skip the Data Collection section (cells 2 - 17), as it involves complex automation operations that may not be compatible with all operating systems, including MacOS and Linux.
-4. Run the Data Processing section (cells 18 - 22) in sequence to convert categorical, numerical, and textual features.
-5. Run the EDA section (cells 23 - 40) in sequence to discover feature patterns and their correlations with the target variable.
-6. Run the Latent Dirichlet Allocation section (cells 41 - 51) in sequence to classify job description text to three main topics.
-7. Run the Data Modeling section (cells 52 - 68) in sequence to develop, evaluate, and save the final models.
+3. Skip the Data Collection section (cells 2 - 17), as it involves complex automation operations that may not be compatible with all operating systems, such MacOS and Linux.
+4. Execute the Data Processing section (cells 18 - 22) to prepare categorical, numerical, and textual features.
+5. Execute the EDA section (cells 23 - 40) to analyze feature patterns and their relationships with the target variable.
+6. Execute the Latent Dirichlet Allocation section (cells 41 - 51) to classify job description texts into three main topics.
+7. Execute the Data Modeling section (cells 52 - 68) to develop, evaluate, and save the final models.
 
-##  Reproducing Results
-1. Ensure sequential execution by carefully following the instructions for each step of processing, analysis, and modeling outlined in this Readme file.
-2. Verify that the csv file referenced in the instruction is located in the same directory as the Jupyter notebook file
+## Reproducing Results
+1. Follow the execution instructions sequentially as outlined in this README to ensure accurate reproduction of results.
+2. Ensure the `job_post_data.csv` file is in the same directory as the Jupyter notebook.
 
 ## Support
-If you encounter any issues, please contact the developer at xig423@lehigh.edu.
-
+For any issues or inquiries, please contact the developer at [xig423@lehigh.edu](mailto:xig423@lehigh.edu).
