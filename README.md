@@ -21,7 +21,7 @@ sklearn, xgboost, catboost
 ### Jupyter Notebook
 
 ## Project Structure:
-•	DSalary_Predictor.ipynb: Project notebook containing all codes.
+•	DSalary_Predictor.ipynb: Project notebook containing all codes.<br>
 •	job_post_data.csv: structural data after cleaning for analysis and model training
 
 ##  Execution of the Project
