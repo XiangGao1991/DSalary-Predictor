@@ -34,6 +34,6 @@ This project is designed to predict salaries for data science roles, utilizing L
 ## Support
 For any issues or inquiries, please contact the developer at [xig423@lehigh.edu](mailto:xig423@lehigh.edu).
 
-## App
-[DSalary Predictor](urlto:[http://ec2-18-188-191-239.us-east-2.compute.amazonaws.com:8050/]).
+## Application
+[DSalary Predictor](http://ec2-18-188-191-239.us-east-2.compute.amazonaws.com:8050/).
 
