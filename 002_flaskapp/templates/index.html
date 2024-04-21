@@ -80,11 +80,37 @@
                 color: #4CAF50;
             }
         </style>
+
+        <script>
+                function validateForm() {
+                  var jobTitle = document.getElementById('JobTitle').value;
+                  var jobDescription = document.getElementById('JobDescription').value;
+                  var skillsChecked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+                  
+                  var errorMessage = '';
+                  if (!jobTitle) {
+                    errorMessage += 'Please enter the Job Title.\n';
+                  }
+                  if (!jobDescription) {
+                    errorMessage += 'Please provide the Job Description.\n';
+                  }
+                  if (skillsChecked === 0) {
+                    errorMessage += 'Please select at least one Required Skill.\n';
+                  }
+                  
+                  if (errorMessage) {
+                    alert(errorMessage);
+                    return false; // Prevent form submission
+                  }
+                  
+                  return true; // Allow form submission
+                }
+        </script>
     </head>
 <body>
     <div class="container">
     <h1>DSalary Predictor</h1>
-    <form action="/" method="POST">
+    <form action="/" method="POST" onsubmit="return validateForm()">
         <!-- Job Title -->
         <label for="JobTitle">Job Title:</label>
         <input type="text" id="JobTitle" name="JobTitle"><br>
